@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
+# ProDev Mobile App 0x00
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Project Setup
 
-## Get started
+This project was created using the Expo Router template.  
+I navigated to the project directory and ran:
 
-1. Install dependencies
+npx create-expo-app@latest . --template expo-router
 
-   ```bash
-   npm install
-   ```
+This generated the application structure including the app directory, tabs navigation, and constants folder.
 
-2. Start the app
+## File Structure
 
-   ```bash
-   npx expo start
-   ```
+The generated project contains:
 
-In the output, you'll find options to open the app in a
+- app/(tabs)/index.tsx for the main home screen
+- constants/Colors.tsx for theme colors
+- assets folder for static files
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Home Screen Modification
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+I opened app/(tabs)/index.tsx and changed the default text from:
+"Welcome!"
+to:
+"First App Created"
 
-## Get a fresh project
+This confirms that the Expo Router app is running correctly.
 
-When you're ready, run:
+## Running the Application
 
-```bash
+I started the development server using:
+
+npx expo start
+
+I scanned the QR code using Expo Go on my Android device and the app loaded successfully.
+
+## Reset Project
+
+I ran the reset command:
+
 npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This command deleted the existing app folder and recreated a fresh Expo Router structure.  
+All previous changes were removed, including the modified home screen text.
 
-## Learn more
+After the reset, I edited app/(tabs)/index.tsx again to restore:
+"First App Created"
 
-To learn more about developing your project with Expo, look at the following resources:
+## Conclusion
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The Expo Router mobile application runs successfully and displays the updated home screen text.
